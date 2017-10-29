@@ -16,7 +16,7 @@
 
 ### Naming comparison between Google and Hadoop (adopted from Prof. Kong Li's slide)
 
-![compare](pic/Screenshot 2017-10-29 14.05.01.png)
+![alt text](pic/Screenshot 2017-10-29 14.05.01.png)
 
 * less emphasis on making Hadoop performant for **random access** workloads by providing low latency access to HDFS.
 
@@ -24,7 +24,7 @@
 
 ### Pros and Cons for HDFS (adopted from Prof. Kong Li's slide)
 
-![compare](pic/Screenshot 2017-10-29 14.26.10.png)
+![alt text](pic/Screenshot 2017-10-29 14.26.10.png)
 
 ## 2. Workload Types
 
@@ -98,9 +98,9 @@ Non-requirements:
 
 ### HBase (adopted from Prof. Kong Li's slide)
 
-![compare](pic/Screenshot 2017-10-29 15.11.41.png)
+![alt text](pic/Screenshot 2017-10-29 15.11.41.png)
 
-![compare](pic/Screenshot 2017-10-29 15.12.02.png)
+![alt text](pic/Screenshot 2017-10-29 15.12.02.png)
 
 ## 4. Realtime HDFS
 
