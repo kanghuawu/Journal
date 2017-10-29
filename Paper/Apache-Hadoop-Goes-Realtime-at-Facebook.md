@@ -15,6 +15,7 @@
 ## 1. Introduction
 
 ### Naming comparison between Google and Hadoop (adopted from Prof. Kong Li's slide)
+
 ![compare](pic/Screenshot 2017-10-29 14.05.01.png)
 
 * less emphasis on making Hadoop performant for **random access** workloads by providing low latency access to HDFS.
@@ -22,6 +23,7 @@
 * A new generation of applications has arisen at Facebook that require very high write throughput and cheap and elastic storage, while simultaneously requiring low latency and disk efficient sequential and random read performance. MySQL storage engines are proven and have very good random read performance, but typically suffer from low random write throughput.
 
 ### Pros and Cons for HDFS (adopted from Prof. Kong Li's slide)
+
 ![compare](pic/Screenshot 2017-10-29 14.26.10.png)
 
 ## 2. Workload Types
@@ -95,7 +97,9 @@ Non-requirements:
 * HBase is massively scalable and delivers fast random writes as well as random and streaming reads. It also provides row-level atomicity guarantees, but no native cross-row transactional support. From a data model perspective, column-orientation gives extreme flexibility in storing data and wide rows allow the creation of billions of indexed values within a single table. HBase is ideal for workloads that are write-intensive, need to maintain a large amount of data, large indices, and maintain the flexibility to scale out quickly.
 
 ### HBase (adopted from Prof. Kong Li's slide)
+
 ![compare](pic/Screenshot 2017-10-29 15.11.41.png)
+
 ![compare](pic/Screenshot 2017-10-29 15.12.02.png)
 
 ## 4. Realtime HDFS
