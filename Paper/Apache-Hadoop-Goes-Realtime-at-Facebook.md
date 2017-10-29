@@ -16,7 +16,7 @@
 
 ### Naming comparison between Google and Hadoop (adopted from Prof. Kong Li's slide)
 
-![alt text](pic/Screenshot 2017-10-29 14.05.01.png)
+![alt text](pic/compare.png)
 
 * less emphasis on making Hadoop performant for **random access** workloads by providing low latency access to HDFS.
 
@@ -24,7 +24,7 @@
 
 ### Pros and Cons for HDFS (adopted from Prof. Kong Li's slide)
 
-![alt text](pic/Screenshot 2017-10-29 14.26.10.png)
+![alt text](pic/hdfs.png)
 
 ## 2. Workload Types
 
@@ -98,9 +98,9 @@ Non-requirements:
 
 ### HBase (adopted from Prof. Kong Li's slide)
 
-![alt text](pic/Screenshot 2017-10-29 15.11.41.png)
+![alt text](pic/hbase1.png)
 
-![alt text](pic/Screenshot 2017-10-29 15.12.02.png)
+![alt text](pic/hbase2.png)
 
 ## 4. Realtime HDFS
 
@@ -115,8 +115,10 @@ Non-requirements:
 * At startup time, the HDFS NameNode reads filesystem metadata from a file called the fsimage file.
 
 * NameNode does not persistently store the locations of each block. Thus, the time to cold-start a NameNode consists of two main parts: 
-**1. firstly, the reading of the file system image, applying the transaction log and saving the new file system image back to disk;
-**2 secondly, the processing of block reports from a majority of DataNodes to recover all known block locations of
+
+  1. firstly, the reading of the file system image, applying the transaction log and saving the new file system image back to disk;
+
+  2. secondly, the processing of block reports from a majority of DataNodes to recover all known block locations of
 
 * In total, a cold-restart takes about 45 minutes. The failover times for the BackupNode solution can be as high as 20 minutes. Our goal is to do a failover within seconds.
 
